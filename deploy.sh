@@ -1,0 +1,1 @@
+echo "deploying to $1 (not really)"
