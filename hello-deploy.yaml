@@ -1,0 +1,11 @@
+---
+platform: linux
+image_resource:
+  type: docker-image
+  source: {repository: maven}
+run:
+  path: "bash"
+  args: ["-c", "./deploy.sh $TARGET_ENV"]
+  dir: "repo"
+inputs: 
+- name: repo
